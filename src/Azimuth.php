@@ -249,4 +249,19 @@ class Azimuth
 
         return array( "distKm" => $distKm, "azimuth" => $azimuth, "altitude" => $altitude);
     }
+
+    public function calculateDistance(Location $origin, Location $target)
+    {
+        return $this->calculate($origin, $target)['distKm'];
+    }
+
+    public function calculateAltitudeAngle(Location $origin, Location $target)
+    {
+        return $this->calculate($origin, $target)['altitude'];
+    }
+
+    public function calculateAzimuth(Location $origin, Location $target)
+    {
+        return $this->calculate($origin, $target)['azimuth'];
+    }
 }
