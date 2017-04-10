@@ -1,0 +1,15 @@
+{
+    "name": "martinfobian/azimuth",
+    "type": "library",
+    "license": "GNU GPL v3",
+    "authors": [
+        {
+            "name": "Martin Fobian",
+            "email": "mail@martinfobian.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Fbnio\\": "src/" }
+    },
+    "require": {}
+}
